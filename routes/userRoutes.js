@@ -13,7 +13,7 @@ getUsers,
 } from "../controllers/userController.js";
 
 const router = express.Router();
-
+// For password User login
 router.post("/", createUser);
 router.get("/me", protect, getMe);
 router.put("/me", protect, updateMe);
